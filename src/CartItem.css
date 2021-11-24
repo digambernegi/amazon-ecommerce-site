@@ -1,0 +1,22 @@
+.item
+{
+    display: flex;
+}
+
+.item__Image{
+    object-fit: contain;
+    height: 180px;
+    width: 180px;
+}
+
+.item__Info{
+    padding-left: 20px;
+}
+.item__Rating{
+    display: flex;
+}
+.item__Remove{
+    background-color: yellow;
+    margin:10px 0;
+    
+}

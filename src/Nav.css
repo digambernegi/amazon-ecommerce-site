@@ -1,0 +1,76 @@
+.Navbar{
+    background-color: rgb(19,25,33);
+    display: flex;
+    align-items: center;
+}
+.logo{
+height: 50px;
+filter: invert(1);
+width: 100px;
+margin: 0 20px;
+cursor: pointer;
+object-fit: contain;
+}
+.input{
+    margin: 7px 0 7px 7px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    outline: none;
+
+}
+.search{
+    display: flex;
+    flex: 1;
+}
+.search__Icon
+{
+    margin: 7px 7px 7px 0;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 13px 10px;
+    background-color: rgb(254,189,105);
+}
+
+
+.user{
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+}
+
+.user__Option,.checkout{
+    color: white;
+   text-decoration: none;  
+   
+}
+.option{
+    display: flex;
+    justify-content: space-evenly;
+    margin:0 10px ;
+    color: white;
+    flex-direction: column;
+}
+
+.option .span1{
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+}
+
+.option .span2{
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+}
+
+.basket{
+    padding: 10px;
+    color: white;
+}
+
+
+.basket .cart{
+    margin: 5px;
+}
