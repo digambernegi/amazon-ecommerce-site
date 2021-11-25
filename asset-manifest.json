@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/amazon-ecommerce-site/static/css/main.36de1f67.chunk.css",
+    "main.js": "/amazon-ecommerce-site/static/js/main.6f3c8a06.chunk.js",
+    "main.js.map": "/amazon-ecommerce-site/static/js/main.6f3c8a06.chunk.js.map",
+    "runtime-main.js": "/amazon-ecommerce-site/static/js/runtime-main.4c2bb601.js",
+    "runtime-main.js.map": "/amazon-ecommerce-site/static/js/runtime-main.4c2bb601.js.map",
+    "static/js/2.beda65af.chunk.js": "/amazon-ecommerce-site/static/js/2.beda65af.chunk.js",
+    "static/js/2.beda65af.chunk.js.map": "/amazon-ecommerce-site/static/js/2.beda65af.chunk.js.map",
+    "static/js/3.7b57c745.chunk.js": "/amazon-ecommerce-site/static/js/3.7b57c745.chunk.js",
+    "static/js/3.7b57c745.chunk.js.map": "/amazon-ecommerce-site/static/js/3.7b57c745.chunk.js.map",
+    "index.html": "/amazon-ecommerce-site/index.html",
+    "static/css/main.36de1f67.chunk.css.map": "/amazon-ecommerce-site/static/css/main.36de1f67.chunk.css.map",
+    "static/js/2.beda65af.chunk.js.LICENSE.txt": "/amazon-ecommerce-site/static/js/2.beda65af.chunk.js.LICENSE.txt",
+    "static/media/applogo.d3313ce0.svg": "/amazon-ecommerce-site/static/media/applogo.d3313ce0.svg",
+    "static/media/homebg.37e38a1c.jpg": "/amazon-ecommerce-site/static/media/homebg.37e38a1c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c2bb601.js",
+    "static/js/2.beda65af.chunk.js",
+    "static/css/main.36de1f67.chunk.css",
+    "static/js/main.6f3c8a06.chunk.js"
+  ]
+}
