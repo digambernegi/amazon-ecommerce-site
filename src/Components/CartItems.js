@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CartItem.css"
-import { useStateValue } from './StateProvider'
+import { useStateValue } from '../StateProvider'
 
 
 const CartItems = ({id,title,rating,price,image}) => {
@@ -11,7 +11,7 @@ const CartItems = ({id,title,rating,price,image}) => {
         dispatch({
             type:'REMOVE_FROM_CART',
             id:id,
-        })
+        });
     }
     return (
         <div className="item">
@@ -28,13 +28,19 @@ const CartItems = ({id,title,rating,price,image}) => {
         
         <div className="item__Rating">
         {
-          Array(rating).fill().map((_) =>(
-          <p>⭐</p>
+          Array(rating).fill().map((_,index) =>(
+           
+          <p  key={index}>⭐</p>
           ))}
         </div>
+        <div>
+          <small>In stock</small>
+          </div>
+          <small>Eligible for FREE Shipping</small>
+          <div>
         
         <button onClick={removeItem} className="item__Remove">Remove</button>
-
+        </div>
         </div>  
         </div>
     )

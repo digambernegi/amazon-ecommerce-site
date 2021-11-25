@@ -1,37 +1,39 @@
 import React from 'react'
 import './Nav.css'
-import applogo from "./asset//applogo.svg"
+import applogo from "../asset//applogo.svg"
 import {Link} from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { FiShoppingCart } from "react-icons/fi";
-import {useStateValue} from "./StateProvider"
+import {useStateValue} from "../StateProvider"
 
 
 const Nav = () => {
 
   //1.action, 2.initiate action
+const[{user}]=useStateValue();
 const [{cart}]=useStateValue();
+console.log(cart)
+console.log(user)
 
     return (
         <nav className="Navbar">
         <Link to="/">
-        <img className="logo" src={applogo} alt="logo" />
+        <img className="logo" src={applogo} alt="Navlogo" />
         </Link>
         <div className="option">
           <span className="span1">Hello</span>
           <span className="span2">India,IN</span>
           </div>
         <div className="search">
-        <input className="input" placeholder="Search products here..." type="text" />
+        <input className="input" placeholder="Search here" type="text" />
         <FiSearch className="search__Icon"/>    
         </div>
           
           <div className="user">
-
           <Link to="/Login" className="user__Option">
           <div className="option">
-          <span className="span1">Hello,Dsn</span>
-          <span className="span2">SignIn</span>
+          <span className="span1">Hello,</span>
+          <span className="span2">{user.displayName}</span>
           </div>
           </Link>
 

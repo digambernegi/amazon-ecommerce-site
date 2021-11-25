@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Product.css"
-import { useStateValue } from './StateProvider'
+import { useStateValue } from '../StateProvider'
 
 
 const Product = ({id,title,rating,price,image}) => {
 const[{cart},dispatch]=useStateValue();
 
-const AddToCart=()=>{
+const AddToCart = () => {
     dispatch({
       type:'ADD_TO_CART',
       payload:{
@@ -21,15 +21,14 @@ const AddToCart=()=>{
   };
     return (
         <div className="product">
-        <div className="product_Info">
-
+        <div className="product__Info">
         <p>{title}</p>
         <p className="product__Price">
         <small>₹</small>
         <strong>{price}</strong>
         </p>
 
-        <div key={id} className="product__Rating">
+        <div className="product__Rating">
         {
           Array(rating).fill().map((_) =>(
           <p>⭐</p>
@@ -37,8 +36,9 @@ const AddToCart=()=>{
         </div>
         </div>
         
-        <img src={image} alt="productimage" />
+        <img className="product__Image" src={image} alt="productimage" />
         <button onClick={AddToCart}>Add to cart</button>
+        
         </div>
     )
 }

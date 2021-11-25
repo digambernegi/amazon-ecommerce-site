@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Total.css"
-import {useState, useStateValue} from "./StateProvider"
+import {useState, useStateValue} from "../StateProvider"
 import CurrencyFormat from "react-currency-format";
-import { getTotal } from './reducer';
+import { getTotal } from '../reducer';
 
 const Total = () => {
     const[{cart},dispatch]=useStateValue();
@@ -12,11 +12,13 @@ const Total = () => {
 
             renderText={(value) => (
                 <>
+                <small className="description">Your order is eligible for FREE Delivery. Select this option at checkout. <span>Details</span></small>
                 <p>
-                   subTotal({cart.length} items):
-                   <strong>{value}</strong>
+                    Subtotal ({cart.length} items): 
+                   <strong> {value}</strong>
                    </p>
-                   <small className="gift"><input type="checkbox" />skdshjdjks</small> 
+                   <small className="gift"><input type="checkbox" />This order contains a gift</small> 
+                
                 </>
             )}
 
@@ -24,7 +26,7 @@ const Total = () => {
             value={getTotal(cart)}
             displayType={'text'}
             thousandSeparator={true}
-            prefix={'$'}     
+            prefix={'₹'}     
             />
             <button>Proceed to checkout</button>
         </div>

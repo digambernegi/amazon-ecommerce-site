@@ -1,5 +1,4 @@
 .home{
-    height: 60vh;
     box-sizing: border-box;
 }
 .home__background{
@@ -15,7 +14,10 @@
     margin:0 5px;
 }
 
-.female{
+.home__Row2{
+    display: flex;
+}
+.categories{
     width: 100%;
     place-items: center;
     background-color: white;
@@ -28,14 +30,21 @@
     padding: 10px;    
 }
 
-.female > h3{
+.categories > h3{
     grid-column: 1 / span 2;
 }
-.female>img{
+.categories>img{
     height: 100px;
 }
-.female .seemore{
+.categories .seemore{
     font-size: 13px;
     color: #5BA4B1;
-text-decoration: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1130px){
+    .home__Row2{
+        flex-wrap: wrap;
+    }
+    
 }

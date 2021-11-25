@@ -1,0 +1,34 @@
+.checkout{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: max-content;
+}
+
+.checkout__Title{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+
+.checkout__Title>h1{
+    grid-column: 1 / span 4;
+    padding-left: 20px;
+}
+
+.checkout__leeft{
+    grid-column: 1 / span 3;
+    align-items: center;
+}
+.checkout__image{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.checkout__Right{
+    display: flex;
+    
+}
